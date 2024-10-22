@@ -1,5 +1,5 @@
 {
-  "name": "demo_app",
+  "name": "flight-reservation",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
