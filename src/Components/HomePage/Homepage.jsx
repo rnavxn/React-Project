@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Button, Container, Grid, Card, CardContent
 
 const Homepage = () => {
   return (
-    <div>
+    <div style={{width:'100%', background: 'red'}}>
       <Navbar />
       <HeroSection />
       <SupportSection />
