@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Button, Container, Grid, Card, CardContent
 
 const Homepage = () => {
   return (
-    <div style={{width:'100%', background: 'red'}}>
+    <div>
       <Navbar />
       <HeroSection />
       <SupportSection />
@@ -15,17 +15,16 @@ const Homepage = () => {
 
 const Navbar = () => {
   return (
-    <AppBar position="static" style={{ backgroundColor: '' }}>
+    <AppBar position="static" style={{ backgroundColor: '#EF6351' }}>
       <Toolbar>
         <Typography variant="h6" style={{ flexGrow: 1 }}>
-          ShopCart
+          FLIGHT RESERVATION
         </Typography>
         <Button color="inherit" href="/">Home</Button>
         <Button color="inherit" href="/about">About</Button>
-        <Button color="inherit" href="/shop">Shop</Button>
-        <Button color="inherit" href="/donate">Donate</Button>
+        <Button color="inherit" href="/shop">RESERVE</Button>
         <Button color="inherit" href="/contact">Contact</Button>
-        <Button color="inherit" href="/cart">🛒</Button>
+        <Button color="inherit" href="/cart">LOGOUT</Button>
       </Toolbar>
     </AppBar>
   );
