@@ -13,6 +13,7 @@ const LoginForgot = () => {
     }
 
     return (
+        <div className='main'>
         <div className='wrapper'>
             <form action="">
                 <h1>Login</h1>
@@ -50,6 +51,7 @@ const LoginForgot = () => {
                     <p>Don't have an account? <a href="http://localhost:3000/Register">Register</a></p>
                 </div>
             </form>
+        </div>
         </div>
     )
 }

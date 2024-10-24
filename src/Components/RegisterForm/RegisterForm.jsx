@@ -12,6 +12,7 @@ const RegisterForm = () => {
         navigate('../home')
     }
     return (
+        <div className='main'>
         <div className='wrapper'>
             <form action="">
                 <h1>Register</h1>
@@ -51,6 +52,7 @@ const RegisterForm = () => {
                     <p>Already have an account? <a href="http://localhost:3000/login">Login</a></p>
                 </div>
             </form>
+        </div>
         </div>
     )
 }

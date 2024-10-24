@@ -13,7 +13,7 @@ const LoginForm = () => {
         navigate('../home')
     }
     return (
-
+        <div className='main'>
         <div className='wrapper'>
             <form action="home">
                 <h1>Login</h1>
@@ -36,10 +36,10 @@ const LoginForm = () => {
                 </button> */}
                 <Stack spacing={2} direction="row">
                     <Button
-                        variant="outlined" 
-                        onClick={home} 
+                        variant="outlined"
+                        onClick={home}
                         type='submit'
-                        style={{background:'#e76f51', color:'white'}} 
+                        style={{ background: '#e76f51', color: 'white' }}
                     >
                         Login
                     </Button>
@@ -49,6 +49,8 @@ const LoginForm = () => {
                 </div>
             </form>
         </div>
+        </div>
+
     )
 }
 
