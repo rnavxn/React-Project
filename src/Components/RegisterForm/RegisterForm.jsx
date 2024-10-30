@@ -4,7 +4,7 @@ import { FaLock } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const RegisterForm = () => {
     const navigate = useNavigate();
@@ -49,7 +49,7 @@ const RegisterForm = () => {
                     </Button>
                 </Stack>
                 <div className="register-link">
-                    <p>Already have an account? <a href="http://localhost:3000/login">Login</a></p>
+                    <p>Already have an account? <Link to='/login'>Login</Link></p>
                 </div>
             </form>
         </div>

@@ -3,7 +3,7 @@ import './LoginForm.css'
 import { FaUser, FaLock } from "react-icons/fa";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -28,7 +28,7 @@ const LoginForm = () => {
 
                 <div className="remember-forgot">
                     <label><input type="checkbox" />Remember me</label>
-                    <a href="http://localhost:3000/forgotpassword">Forgot password?</a>
+                    <Link to='/forgotpassword'>Forgot password?</Link>
                 </div>
 
                 {/* <button type="submit">
@@ -45,7 +45,7 @@ const LoginForm = () => {
                     </Button>
                 </Stack>
                 <div className="register-link">
-                    <p>Don't have an account? <a href="http://localhost:3000/Register">Register</a></p>
+                    <p>Don't have an account? <Link to='/register'>Register</Link></p>
                 </div>
             </form>
         </div>

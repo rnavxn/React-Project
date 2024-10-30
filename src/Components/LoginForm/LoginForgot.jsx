@@ -3,7 +3,7 @@ import './LoginForm.css'
 import { IoMdMail } from "react-icons/io";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const LoginForgot = () => {
@@ -48,7 +48,7 @@ const LoginForgot = () => {
                     </Button>
                 </Stack>
                 <div className="register-link">
-                    <p>Don't have an account? <a href="http://localhost:3000/Register">Register</a></p>
+                    <p>Don't have an account? <Link to='/register'>Register</Link></p>
                 </div>
             </form>
         </div>
