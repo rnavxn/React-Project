@@ -1,45 +1,4 @@
-# React-Project
-### To work on the REACT JS Projects
----
-
-> # Dependencies required to run this project
- ## Material UI
- 
- - Install Material UI
->
->  ```npm install @mui/material @emotion/react @emotion/styled``` 
->
-> ```npm install @mui/material @mui/styled-engine-sc styled-components```
->
-> ```npm install @fontsource/roboto```
->
-> ```npm install @mui/icons-material```
-
- - Code to be __pasted__ on the \<head> tag Header section
->
-> ```<link rel="preconnect" href="https://fonts.googleapis.com" />``` \
-> ```<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />``` \
-> ```<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"/> ``` \
-> ```<link rel="stylesheet "href="https://fonts.googleapis.com/icon?family=Material+Icons"/>```
-
-## React Router DOM
- > npm i -D react-router-dom
-
-## React Icons
-> ```npm install react-icons --save```
-
-- If the above code does'nt have enough icons, try the code below.
-> ```npm install @react-icons/all-files --save```
-
-## Axios (Prolly not used in this project)
- - Not really necessary, include when it throughs error on axios if exist.
- - If you still insist on installing axios use this command
->  ```npm install axios```
- -  To install React error boundary
-> ```npm install react-error-boundary```
-
-
- ---
+# Flight-Reservation
 
 # Getting Started with Create React App
 
