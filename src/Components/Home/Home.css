@@ -52,7 +52,7 @@
     margin: 20px auto;
     margin-top: 30px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background: transparent;
@@ -76,9 +76,10 @@
     margin-bottom: 7px;
 }
 
-.returndate {
-    background-color: #F7A399 !important;
-    cursor: not-allowed;
+.form-group label input {
+    box-shadow: none !important;
+    accent-color: #EF6351;
+    transform: scale(1.2);
 }
 
 .form-group input,
@@ -94,7 +95,6 @@
     outline: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    /* 0 0 8px rgba(255, 255, 255, 0.8); */
 }
 
 .form-group input:hover,
@@ -141,6 +141,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 10px;
     background-color: #EF6351;
     color: white;
+    font-size: large;
     font-weight: bold;
     border: none;
     border-radius: 30px;
@@ -150,5 +151,142 @@ input[type="number"]::-webkit-outer-spin-button {
 .searchbtn:hover {
     background-color: #FFE3E0;
     color: #EF6351;
-    border: 2px solid #EF6351;
+    /* border: 2px solid #EF6351; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#para {
+    text-align: center;
+}
+
+
+/* Container for the results */
+.results {
+    width: 60%;
+    margin: 50px;
+    padding: 25px;
+    justify-self: center;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/* Title for results section */
+.results h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Individual result item */
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.result:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, .9);
+    color: #EF6351;
+}
+
+/* Destination and Price text */
+.result p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Book Now button */
+.result button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #EF6351;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result button:hover {
+    background-color: #EF6351;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(239, 99, 81, 7);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+/* Modal box styling */
+.modal {
+    display: grid;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    width:30%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    row-gap: 10px;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal input {
+    font-family: 'Poppins';
+    width: 100%;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 20px;
+    border: 1px ridge rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    outline: none;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.modal button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    font-weight: 550;
+    color: #fff;
+    background-color: #EF6351;
+    border: none;
+    border-radius: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #FFE3E0;
+    color: #EF6351;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
